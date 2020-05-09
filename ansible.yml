@@ -27,7 +27,7 @@ ger-script,manager-jmx,manager-status" />'}
         - restart tomcat
 
   - name: deploying war file for tomcat
-    copy: src=/var/lib/jenkins/workspace/test-webapp-1/target dest=/var/lib/tomcat/webapps/
+    copy: src=/var/lib/jenkins/workspace/maven-webapp/target dest=/var/lib/tomcat/webapps/
 
   handlers:
     - name: restart tomcat
